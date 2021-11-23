@@ -66,9 +66,21 @@
       /* Modern Browsers */
     }
   </style>
+    
+  
 
-
+  <link rel="preload" href="/assets/css/background.css">
   <link rel="stylesheet" href="/assets/css/base.css">
+  <script>
+    window.onload = function(){
+      const preloaded = document.querySelectorAll("[rel='preload']")
+      for (let i = 0; i < preloaded.length; i++) {
+        preloaded[i].setAttribute("rel", "stylesheet")
+        
+      }      
+    }
+    
+  </script>
   <!--[if lte IE 9]>
           <link rel="stylesheet" href="/assets/css/ie9.css">
       <![endif]-->

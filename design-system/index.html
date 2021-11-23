@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Design system</title>
+
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="/assets/img/favicons/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="/assets/img/favicons/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicons/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/img/favicons/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/img/favicons/favicon-144.png">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+
+  <style>
+    @font-face {
+      font-family: 'questrial';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      src: url('/assets/fonts/questrial-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/questrial-regular.woff') format('woff');
+      /* Modern Browsers */
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      src: url('/assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/poppins-v15-latin-regular.woff') format('woff');
+      /* Modern Browsers */
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/assets/fonts/poppins-v15-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/poppins-v15-latin-700.woff') format('woff');
+      /* Modern Browsers */
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <!--[if lte IE 9]>
+          <link rel="stylesheet" href="/assets/css/ie9.css">
+      <![endif]-->
+
+  <!--[if lte IE 8]>
+          <link rel="stylesheet" href="/assets/css/ie8.css">
+      <![endif]-->
+
+  <!--[if lte IE 7]>
+          <link rel="stylesheet" href="/assets/css/ie7.css">
+      <![endif]-->
+
+  <!--[if lte IE 5]>
+          <link rel="stylesheet" href="/assets/css/ie5.css">
+      <![endif]-->
+
+
+  <script src="/assets/js/utils/class-function.js"></script>
+  <script>
+    (function () {
+      var html = document.getElementsByTagName('html')[0];
+
+      if (html) {
+        html.className += html.className ? " js" : "js";
+      }
+
+      if (typeof SVGRect !== "undefined") {
+        html.className += html.className ? " svg" : "svg";
+      }
+
+      window.animation = false;
+      if (document.createElement('div').style.animationName !== undefined && Element.prototype.closest) {
+        window.animation = true;
+        window.classFunction.addClass(html, 'animation-supported');
+      }
+    })();
+  </script>
+
+  
+  
+        <link rel="stylesheet" href="../../assets/css/design-system/design-system.css">
+    
+  
+
+  
+
+</head>
+<body>
+
+    
+    <div class="header  header--sticky">
+  <header>
+    <div class="header__container container-ds clearfix blocks-container d-flex align-items-center">
+      <div class="header__logo float-left logo" role="banner">
+        <a href="#hero" class="d-block image-block-inside">
+          <picture>
+              <source type="image/svg+xml" srcset="/assets/img/3ara5SMDKZ-168.svg">
+              <img src="/assets/img/3ara5SMDKZ-168.png" width="152" height="32" alt="To home"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+
+      <div class="header__main-menu-container  float-left" id="main-menu-container">
+        <nav aria-label="solbunny main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="solbunny main menu">
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="/design-system/typography/">Typography </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="/design-system/colors/">Colors </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="/design-system/ui/">Ui-kit </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="/design-system/icons&amp;images/">Icons &amp; images </a>
+            </li>
+          
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+    
+    <div class = "spacer-100"></div>
+
+    
+<div class="main">
+    <main>
+  
+        <div class="container-tb">
+
+          <ul class="components-list blocks-container blocks-container-tb clearfix">
+              
+                <li class="component-card component-card--shadow block block-4-tb block-12 block-6-ph">
+                  <div class="buffer-s blocks-container__full-height-child">
+                    <a href="/design-system/colors/">
+                      <div class="component-card__inner">
+                        <h2 class="component-card__heading components__h2">Colors</h2>
+                        <div class="component-card__img">
+                          <picture>
+                            <source type="image/svg+xml" srcset="/assets/img/design-system/preview/color-system.svg">
+                            <img src="/assets/img/design-system/preview/color-system.png" alt="Colors layout" width="220" height="148" loading="lazy" decoding="async">
+                          </picture>
+                        </div>
+                      </div>                                    
+                    </a>
+                  </div>
+                </li>
+              
+                <li class="component-card component-card--shadow block block-4-tb block-12 block-6-ph">
+                  <div class="buffer-s blocks-container__full-height-child">
+                    <a href="/design-system/icons&amp;images/">
+                      <div class="component-card__inner">
+                        <h2 class="component-card__heading components__h2">Icons &amp; images</h2>
+                        <div class="component-card__img">
+                          <picture>
+                            <source type="image/svg+xml" srcset="/assets/img/design-system/preview/typography.svg">
+                            <img src="/assets/img/design-system/preview/typography.png" alt="Icons &amp; images layout" width="220" height="148" loading="lazy" decoding="async">
+                          </picture>
+                        </div>
+                      </div>                                    
+                    </a>
+                  </div>
+                </li>
+              
+                <li class="component-card component-card--shadow block block-4-tb block-12 block-6-ph">
+                  <div class="buffer-s blocks-container__full-height-child">
+                    <a href="/design-system/typography/">
+                      <div class="component-card__inner">
+                        <h2 class="component-card__heading components__h2">Typography</h2>
+                        <div class="component-card__img">
+                          <picture>
+                            <source type="image/svg+xml" srcset="/assets/img/design-system/preview/typography.svg">
+                            <img src="/assets/img/design-system/preview/typography.png" alt="Typography layout" width="220" height="148" loading="lazy" decoding="async">
+                          </picture>
+                        </div>
+                      </div>                                    
+                    </a>
+                  </div>
+                </li>
+              
+                <li class="component-card component-card--shadow block block-4-tb block-12 block-6-ph">
+                  <div class="buffer-s blocks-container__full-height-child">
+                    <a href="/design-system/ui/">
+                      <div class="component-card__inner">
+                        <h2 class="component-card__heading components__h2">UI</h2>
+                        <div class="component-card__img">
+                          <picture>
+                            <source type="image/svg+xml" srcset="/assets/img/design-system/preview/ui-kit.svg">
+                            <img src="/assets/img/design-system/preview/ui-kit.png" alt="UI layout" width="220" height="148" loading="lazy" decoding="async">
+                          </picture>
+                        </div>
+                      </div>                                    
+                    </a>
+                  </div>
+                </li>
+              
+          </ul>
+
+        </div>
+    </main>
+</div>
+
+
+    <script async src="/assets/js/menu.js"></script>
+
+    <div class="spacer-70"></div>
+
+    
+<footer>
+    <div class="footer">
+        <div class="container-ds text-center">
+            <a href="https://github.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="/assets/img/BdHG6OjJRk-32.svg">
+              <img src="/assets/img/BdHG6OjJRk-32.png" width="32" height="32" alt="to our github"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            <a href="https://gitbook.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="/assets/img/xHByo37SHS-32.svg">
+              <img src="/assets/img/xHByo37SHS-32.png" width="32" height="32" alt="to our gitbook"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            <a href="https://medium.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="/assets/img/rcMVak410q-32.svg">
+              <img src="/assets/img/rcMVak410q-32.png" width="32" height="32" alt="to our medium"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

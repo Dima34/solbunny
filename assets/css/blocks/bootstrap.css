@@ -1,0 +1,258 @@
+body { 
+  margin: 0;
+}
+
+.list-reset{
+  padding: 0;
+  margin: 0;
+}
+
+.list-reset li{
+  list-style: none;
+}
+
+.spacer-5 {
+  padding-top: 5px;
+}
+
+.spacer-10 {
+  padding-top: 10px;
+}
+
+.spacer-20 {
+  padding: 12px 0;
+}
+
+.spacer-30 {
+  padding: 15px 0;
+}
+
+.spacer-50 {
+  padding-top: 50px;
+}
+
+.spacer-55{
+  padding-top: 55px;
+}
+
+.spacer-60{
+  padding-top: 60px;
+}
+
+.spacer-70{
+  padding-top: 70px;
+}
+
+
+.spacer-100{
+  padding-top: 100px;
+}
+
+
+.spacer-140{
+  padding-top: 140px;
+}
+
+
+/* Clearfix taken from here: http://niblockasgallagher.com/micro-clearfix-hack/. */
+
+.clearfix { 
+  zoom: 1; 
+}
+
+.clearfix:before,
+.clearfix:after { 
+  content: "";
+  display: table; 
+}
+
+.clearfix:after {
+  clear: both; 
+}
+
+.clearfix-ph,
+.clearfix-tb,
+.clearfix-lp,
+.clearfix-ds {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 840px) {
+
+  .clearfix-ph {
+    display: block;
+  }
+
+  .clearfix-ph:before,
+  .clearfix-ph:after { 
+    content: "";
+    display: table; 
+  }
+  
+  .clearfix-ph:after {
+    clear: both; 
+  }
+
+}
+
+@media (min-width: 840px) and (max-width: 1150px) {
+  .clearfix-tb {
+    display: block;
+  }
+
+  .clearfix-tb:before,
+  .clearfix-tb:after { 
+    content: "";
+    display: table; 
+  }
+  
+  .clearfix-tb:after {
+    clear: both; 
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1439px) {
+  .clearfix-lp {
+    display: block;
+  }
+
+  .clearfix-lp:before,
+  .clearfix-lp:after { 
+    content: "";
+    display: table; 
+  }
+  
+  .clearfix-lp:after {
+    clear: both; 
+  }
+}
+
+@media (min-width: 1110px) {
+  .clearfix-ds {
+    display: block;
+  }
+
+  .clearfix-ds:before,
+  .clearfix-ds:after { 
+    content: "";
+    display: table; 
+  }
+  
+  .clearfix-ds:after {
+    clear: both; 
+  }
+}
+
+.blocks-container {
+  padding: 0 1px; /* Without this rule, blocks will line up in blockumn. Paddings must be at least nominal */
+}
+
+.block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9, .block-10, .block-11, .block-12,
+.block-1-ph, .block-2-ph, .block-3-ph, .block-4-ph, .block-5-ph, .block-6-ph, .block-7-ph, .block-8-ph, .block-9-ph, .block-10-ph, .block-11-ph, .block-12-ph,
+.block-1-tb, .block-2-tb, .block-3-tb, .block-4-tb, .block-5-tb, .block-6-tb, .block-7-tb, .block-8-tb, .block-9-tb, .block-10-tb, .block-11-tb, .block-12-tb,
+.block-1-lp, .block-2-lp, .block-3-lp, .block-4-lp, .block-5-lp, .block-6-lp, .block-7-lp, .block-8-lp, .block-9-lp, .block-10-lp, .block-11-lp, .block-12-lp,
+.block-1-ds, .block-2-ds, .block-3-ds, .block-4-ds, .block-5-ds, .block-6-ds, .block-7-ds, .block-8-ds, .block-9-ds, .block-10-ds, .block-11-ds, .block-12-ds {
+  float: left;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+.block-6 {
+  width: 50%;
+}
+.block-12 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  
+  .block-6-ph {
+    width: 50%;
+  }
+  
+}
+
+@media (min-width: 840px) {
+  .block-4-tb{
+    width: 33.33333333%;
+  }
+  
+  .block-8-tb{
+    width: 66.66666666%;
+  }
+  
+}
+
+/* custom cases */
+
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Flex */
+
+@supports (display: flex) {
+  .blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .clearfix::before,
+  .clearfix::after {
+    content: none;
+  }
+
+  .clearfix-ph,
+  .clearfix-tb,
+  .clearfix-lp,
+  .clearfix-ds {
+    display: none;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .align-items-start {
+    align-items: flex-start;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+}

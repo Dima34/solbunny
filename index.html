@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SolBunny home page">
+  <title>SolBunny</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="./assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="./assets/img/favicons/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="./assets/img/favicons/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicons/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="./assets/img/favicons/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16.png">
+<link rel="apple-touch-icon" href="./assets/img/favicons/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicons/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicons/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicons/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicons/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicons/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicons/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicons/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="./assets/img/favicons/favicon-144.png">
+<meta name="msapplication-config" content="./assets/img/favicons/browserconfig.xml">
+
+  <style>
+    @font-face {
+      font-family: 'questrial';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      src: url('./assets/fonts/questrial-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/questrial-regular.woff') format('woff');
+      /* Modern Browsers */
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      src: url('./assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/poppins-v15-latin-regular.woff') format('woff');
+      /* Modern Browsers */
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      font-weight: 700;
+      font-display: swap;
+      src: url('./assets/fonts/poppins-v15-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/poppins-v15-latin-700.woff') format('woff');
+      /* Modern Browsers */
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <!--[if lte IE 9]>
+          <link rel="stylesheet" href="./assets/css/ie9.css">
+      <![endif]-->
+
+  <!--[if lte IE 8]>
+          <link rel="stylesheet" href="./assets/css/ie8.css">
+      <![endif]-->
+
+  <!--[if lte IE 7]>
+          <link rel="stylesheet" href="./assets/css/ie7.css">
+      <![endif]-->
+
+  <!--[if lte IE 5]>
+          <link rel="stylesheet" href="./assets/css/ie5.css">
+      <![endif]-->
+
+
+  <script src="./assets/js/utils/class-function.js"></script>
+  <script>
+    (function () {
+      var html = document.getElementsByTagName('html')[0];
+
+      if (html) {
+        html.className += html.className ? " js" : "js";
+      }
+
+      if (typeof SVGRect !== "undefined") {
+        html.className += html.className ? " svg" : "svg";
+      }
+
+      window.animation = false;
+      if (document.createElement('div').style.animationName !== undefined && Element.prototype.closest) {
+        window.animation = true;
+        window.classFunction.addClass(html, 'animation-supported');
+      }
+    })();
+  </script>
+
+  
+
+  
+  <style>
+    {
+        {
+        customStyles
+      }
+    }
+  </style>
+  
+
+</head>
+<body>
+
+    
+    <div class="header  header--sticky">
+  <header>
+    <div class="header__container container-ds clearfix blocks-container d-flex align-items-center">
+      <div class="header__logo float-left logo" role="banner">
+        <a href="#hero" class="d-block image-block-inside">
+          <picture>
+              <source type="image/svg+xml" srcset="./assets/img/3ara5SMDKZ-168.svg">
+              <img src="./assets/img/3ara5SMDKZ-168.png" width="152" height="32" alt="To home"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+
+      <div class="header__main-menu-container  float-left" id="main-menu-container">
+        <nav aria-label="solbunny main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="solbunny main menu">
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="#hero"> </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="#intro">Intro </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="#tokenomics">Tokenomics </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="#join">Join </a>
+            </li>
+          
+            <li class="main-menu__item" role="none">
+              <a class="main-menu__link
+              " 
+              
+              href="#roadmap">Roadmap </a>
+            </li>
+          
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+    
+    
+<div class="main">
+  <main>
+
+    <nav>
+      <ul class="section-navigation">
+        <li class="section-navigation__item buffer">
+          <a class="section-navigation__link" aria-label="move to Hero" href="#hero"></a>
+        </li>
+        <li class="section-navigation__item buffer">
+          <a class="section-navigation__link" aria-label="move to Intro" href="#intro"></a>
+        </li>
+        <li class="section-navigation__item buffer">
+          <a class="section-navigation__link" aria-label="move to tokenomics" href="#tokenomics"></a>
+        </li>
+        <li class="section-navigation__item buffer">
+          <a class="section-navigation__link" aria-label="move to join" href="#join"></a>
+        </li>
+        <li class="section-navigation__item buffer">
+          <a class="section-navigation__link" aria-label="move to roadmap" href="#roadmap"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+
+      <div class="hero anchor-target" id="hero">
+        <div class="container-ds page-section">
+          <div class="spacer-160"></div>
+          <div class="d-flex hero__container flex-wrap blocks-container clearfix justify-content-between">
+            <div class="hero__info block-12 block-8-tb float-left">
+              <div class="spacer-60"></div>
+              <p class="h3 hero__overtitle arial text">Meet Your New Friend</p>
+              <h1 class="arial hero__title">SolBunny</h1>
+              <p class="hero__undertitle text">For the community by the community - Beyond meme</p>
+              <div class="spacer-5"></div>
+              
+          
+              <div class="hero__buttons blocks-container clearfix">
+                <div class="buffer float-left">
+                  <button>Join Us</button>
+                </div>
+                <div class="buffer float-left">
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="buffer hero__image block-12 block-6-ph block-4-tb float-left">
+              <img src="./assets/img/intro__image.svg" width="450" height="450" alt="just a bunny">
+            </div>
+
+          </div>
+            <div class="hero__enter block-12 buffer text-center">
+              
+            <div class="spacer-70 block-12"></div>
+              <a href="#" class="button d-inline-block text-center" aria-label="Enter BunnyVerse">Enter BunnyVerse</a>
+            </div>
+
+          <div class="spacer-20"></div>
+        </div>
+      </div>
+
+    </section>
+    <div class="spacer-10"></div>
+    <section>
+      <div>
+        <div id="intro" class="anchor-target">
+          <div class="spacer-100"></div>
+          <div class="background " data-orientation="right" data-speed="10">
+            <div class="container-ds blocks-container clearfix about__container">
+              <div class="about__gradient"></div>
+
+              <div class="about float-left">
+                <div class="spacer spacer-140"></div>
+                <div class="about__header blocks-container clearfix f-flex align-items-center">
+                  <div class="buffer float-left" role="presentation" aria-hidden="true">
+                    <picture>
+                <source type="image/webp" srcset="./assets/img/Xg7GLydkE2-70.webp 70w,
+ ./assets/img/Xg7GLydkE2-105.webp 105w,
+ ./assets/img/Xg7GLydkE2-140.webp 140w,
+ ./assets/img/Xg7GLydkE2-210.webp 210w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/Xg7GLydkE2-70.png 70w,
+ ./assets/img/Xg7GLydkE2-105.png 105w,
+ ./assets/img/Xg7GLydkE2-140.png 140w,
+ ./assets/img/Xg7GLydkE2-210.png 210w" sizes="100vw">
+                  <img
+                      src="./assets/img/Xg7GLydkE2-70.png"
+                      width="70"
+                      height="70"
+                      alt="Icon"
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+
+                  </div>
+                  <p class="h3 heading-small quest buffer float-left">BUNNY QUANTUM-HOP</p>
+                </div>
+                <h2>
+                  Community With Purpose Beyond The Individual
+                </h2>
+                <p class="text-s">
+                  SolBunny is ready to hop with you to the moon, and with Solana we will arrive even faster — The next
+                  generation in blockchain.
+                  <br><br>
+                  The purpose is to welcome everyone to the future by a friendly meme crypto, and most importantly, have
+                  fun
+                  while doing it.
+                  <br><br>
+                  The community is a flat hierarchy with liquid democracy, but we value health, wealth and prosperity.
+                  We
+                  are
+                  beyond meme.
+                </p>
+                <div class="spacer spacer-140"></div>
+              </div>
+
+              <div class="about__image buffer float-left ml-auto">
+                <div class="spacer spacer-140"></div>
+                <div class="about__image_wrapper" data-speed="10" role="presentation" aria-hidden="true">
+                  <picture>
+              <source type="image/svg+xml" srcset="./assets/img/IHnlPiIIZb-544.svg">
+              <img src="./assets/img/IHnlPiIIZb-544.png" width="544" height="683" alt="bunnies with baloons"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+                <div class="spacer spacer-140"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="spacer-10"></div>
+        <div id="tokenomics" class="anchor-target background " data-orientation="left" data-speed="10">
+
+          <div class="container-ds blocks-container clearfix about__container">
+
+            <div class="about__gradient"></div>
+            <div class="about__image buffer float-left">
+              <div class="spacer spacer-140"></div>
+              <div class="about__image_wrapper" speed="20" role="presentation" aria-hidden="true">
+                <picture>
+              <source type="image/svg+xml" srcset="./assets/img/fBWiAQkeXy-544.svg">
+              <img src="./assets/img/fBWiAQkeXy-544.png" width="544" height="365" alt=" bunnie teacher"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+              </div>
+              <div class="spacer spacer-140"></div>
+            </div>
+
+            <div class="about float-left ml-auto">
+              <div class="spacer spacer-140"></div>
+              <div class="about__header blocks-container clearfix f-flex align-items-center">
+                <div class="buffer float-left" role="presentation" aria-hidden="true">
+                  <picture>
+                <source type="image/webp" srcset="./assets/img/1S9Bqj37rf-70.webp 70w,
+ ./assets/img/1S9Bqj37rf-105.webp 105w,
+ ./assets/img/1S9Bqj37rf-140.webp 140w,
+ ./assets/img/1S9Bqj37rf-210.webp 210w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/1S9Bqj37rf-70.png 70w,
+ ./assets/img/1S9Bqj37rf-105.png 105w,
+ ./assets/img/1S9Bqj37rf-140.png 140w,
+ ./assets/img/1S9Bqj37rf-210.png 210w" sizes="100vw">
+                  <img
+                      src="./assets/img/1S9Bqj37rf-70.png"
+                      width="70"
+                      height="70"
+                      alt="Icon"
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                </div>
+                <p class="h3 heading-small quest buffer float-left">TOKENOMICS</p>
+              </div>
+              <h2>
+                Fixed Supply With Buyback And Burns
+              </h2>
+              <p class="text-s">
+                SolBunny started its journey with a stealth launch on 5 November 2021. The project was funded by its
+                community without any core team so it remains completely decentralized.
+              </p>
+
+              <ul class="text-s">
+                <li>Fixed supply: 1,000,000,000,000,000 SBUN</li>
+                <li>Halving of the supply every year on 5 November</li>
+                <li>500T was burned on launch — You decide the future</li>
+              </ul>
+              <div class="spacer spacer-140"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="spacer-10"></div>
+    <section>
+      <div class="anchor-target backgroundEnchanced" id="join" data-orientation="center" data-speed="10">
+
+        <div class="spacer-60"></div>
+        <div class="container-lp page-section blocks-container clearfix">
+          <div class="join__header mx-auto text-center">
+            <div class="buffer mx-auto" role="presentation" aria-hidden="true">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/0CFa6baMcA-70.webp 70w,
+ ./assets/img/0CFa6baMcA-105.webp 105w,
+ ./assets/img/0CFa6baMcA-140.webp 140w,
+ ./assets/img/0CFa6baMcA-210.webp 210w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/0CFa6baMcA-70.png 70w,
+ ./assets/img/0CFa6baMcA-105.png 105w,
+ ./assets/img/0CFa6baMcA-140.png 140w,
+ ./assets/img/0CFa6baMcA-210.png 210w" sizes="100vw">
+                  <img
+                      src="./assets/img/0CFa6baMcA-70.png"
+                      width="70"
+                      height="70"
+                      alt="Join The Community Icon"
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+
+            </div>
+
+            <h2>Join The Community</h2>
+
+            <p class="text-s join__subtitle mx-auto">Nothing like sharing your love and passion with the SolBunnyFam. We
+              are always having a
+              blast towards our journey to the moon. And you are in the FRONT SEAT.</p>
+            <div class="spacer-70"></div>
+          </div>
+
+          <div class="join__grid blocks-container clearfix block-12">
+            <div class="float-left join__grid__item block-12 block-6-ph block-4-tb text-center">
+              <div class="buffer">
+                <picture>
+              <source type="image/svg+xml" srcset="./assets/img/i87CODwzBt-195.svg">
+              <img src="./assets/img/i87CODwzBt-195.png" width="195" height="175" alt="twitter logo"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+              </div>
+
+              <div class="buffer">
+                <a href="#" aria-label="Out discord link" class="button mx-auto d-block">Twiter</a>
+              </div>
+            </div>
+
+            <div class="float-left join__grid__item block-12 block-6-ph block-4-tb text-center">
+              <div class="buffer">
+                <picture>
+              <source type="image/svg+xml" srcset="./assets/img/kE_r9Hfzoj-195.svg">
+              <img src="./assets/img/kE_r9Hfzoj-195.png" width="195" height="175" alt="discord logo"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+              </div>
+
+              <div class="buffer">
+                <a aria-label="Out Discord Link" href="#" class="button mx-auto d-block">Discord</a>
+              </div>
+            </div>
+
+            <div class="float-left join__grid__item block-12 block-6-ph block-4-tb text-center">
+              <div class="buffer">
+                <picture>
+              <source type="image/svg+xml" srcset="./assets/img/6O0C28f1DO-195.svg">
+              <img src="./assets/img/6O0C28f1DO-195.png" width="195" height="175" alt="reddit logo"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+              </div>
+
+              <div class="buffer">
+                <a aria-label="Our Reddit Link" href="#" class="button mx-auto d-block">Reddit</a>
+              </div>
+            </div>
+
+            <div class="float-left join__grid__item indicator__wrapper block-12 block-6-ph block-4-tb text-center">
+              <div class="animation-target indicator indicator--1 buffer">
+
+                <div class="cirlce">
+                  <div class="circle__image" aria-hidden="true">
+                    <picture>
+                <source type="image/webp" srcset="./assets/img/BVv7Ub45rH-195.webp 195w,
+ ./assets/img/BVv7Ub45rH-292.webp 292w,
+ ./assets/img/BVv7Ub45rH-390.webp 390w,
+ ./assets/img/BVv7Ub45rH-585.webp 585w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/BVv7Ub45rH-195.png 195w,
+ ./assets/img/BVv7Ub45rH-292.png 292w,
+ ./assets/img/BVv7Ub45rH-390.png 390w,
+ ./assets/img/BVv7Ub45rH-585.png 585w" sizes="100vw">
+                  <img
+                      src="./assets/img/BVv7Ub45rH-195.png"
+                      width="195"
+                      height="175"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                  </div>
+                  <svg width="220" height="220" class="indicator__svg">
+                    <circle class="indicator__svg-progress" cx="110" cy="110" r="105"></circle>
+                  </svg>
+                </div>
+
+                
+                <div class="about-circle__text-block">
+                  <p>
+                    Total supply:<span class="indicator__text">
+                      <span class="animating-counter text-s" data-start="0" data-end="1000" data-duration="1700"
+                      data-delay="2000">
+                      1000
+                      </span>
+                      <span class=" text-s">T</span>
+                    </span><br>
+                    <span class="indicator__text indicator__score">
+                      <span class="animating-counter" data-start="0" data-end="100" data-duration="1700"
+                      data-delay="2000">
+                      100
+                      </span>
+                      <span class="">%</span>
+                    </span>
+                    
+                  </p>
+                 
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="float-left join__grid__item indicator__wrapper block-12 block-6-ph block-4-tb text-center">
+              <div class="animation-target indicator indicator--2 buffer">
+
+                <div class="cirlce">
+                  <div class="circle__image" aria-hidden="true">
+                    <picture>
+                <source type="image/webp" srcset="./assets/img/9H1Y4NfYXl-195.webp 195w,
+ ./assets/img/9H1Y4NfYXl-292.webp 292w,
+ ./assets/img/9H1Y4NfYXl-390.webp 390w,
+ ./assets/img/9H1Y4NfYXl-585.webp 585w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/9H1Y4NfYXl-195.png 195w,
+ ./assets/img/9H1Y4NfYXl-292.png 292w,
+ ./assets/img/9H1Y4NfYXl-390.png 390w,
+ ./assets/img/9H1Y4NfYXl-585.png 585w" sizes="100vw">
+                  <img
+                      src="./assets/img/9H1Y4NfYXl-195.png"
+                      width="195"
+                      height="175"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                  </div>
+                  <svg width="220" height="220" class="indicator__svg">
+                    <circle class="indicator__svg-progress" cx="110" cy="110" r="105"></circle>
+                  </svg>
+                </div>
+
+                
+                <div class="about-circle__text-block">
+                  <p>
+                    Burned:<span class="indicator__text">
+                      <span class="animating-counter text-s" data-start="0" data-end="0" data-duration="1700"
+                      data-delay="2000">
+                      0
+                      </span>
+                      <span class=" text-s">T</span>
+                    </span><br>
+                    <span class="indicator__text indicator__score">
+                      <span class="animating-counter" data-start="0" data-end="0" data-duration="1700"
+                      data-delay="2000">
+                      0
+                      </span>
+                      <span class="">%</span>
+                    </span>
+                    
+                  </p>
+                 
+                </div>
+
+              </div>
+            </div>
+
+            <div class="float-left join__grid__item indicator__wrapper block-12 block-6-ph block-4-tb text-center">
+              <div class="animation-target indicator indicator--3 buffer">
+
+                <div class="cirlce">
+                  <div class="circle__image" aria-hidden="true">
+                    <picture>
+                <source type="image/webp" srcset="./assets/img/ZFGp5AsSG8-195.webp 195w,
+ ./assets/img/ZFGp5AsSG8-292.webp 292w,
+ ./assets/img/ZFGp5AsSG8-390.webp 390w,
+ ./assets/img/ZFGp5AsSG8-585.webp 585w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/ZFGp5AsSG8-195.png 195w,
+ ./assets/img/ZFGp5AsSG8-292.png 292w,
+ ./assets/img/ZFGp5AsSG8-390.png 390w,
+ ./assets/img/ZFGp5AsSG8-585.png 585w" sizes="100vw">
+                  <img
+                      src="./assets/img/ZFGp5AsSG8-195.png"
+                      width="195"
+                      height="175"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                  </div>
+                  <svg width="220" height="220" class="indicator__svg">
+                    <circle class="indicator__svg-progress" cx="110" cy="110" r="105"></circle>
+                  </svg>
+                </div>
+
+                
+                <div class="about-circle__text-block">
+                  <p>
+                    Circulation:<span class="indicator__text">
+                      <span class="animating-counter text-s" data-start="0" data-end="1.7" data-rounding="1" data-duration="1700"
+                      data-delay="2000">
+                      1,7
+                      </span>
+                      <span class=" text-s">T</span>
+                    </span><br>
+                    <span class="indicator__text indicator__score">
+                      <span class="animating-counter" data-start="0" data-end="2" data-duration="1700"
+                      data-delay="2000">
+                      2
+                      </span>
+                      <span class="">%</span>
+                    </span>
+                    
+                  </p>
+                 
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-50"></div>
+      </div>
+
+
+    </section>
+    <div class="spacer-10"></div>
+    <section>
+      <div class="anchor-target" id="roadmap">
+        <div class="spacer-70"></div>
+        <div class="container-lp page-section blocks-container clearfix">
+          <div class="roadmap__header block-12">
+            <h2 class="mx-auto text-center">Roadmap of SolBunny</h2>
+            <div class="spacer-55"></div>
+          </div>
+
+          <div class="roadmap__main block-12">
+            <div class="roadmap__item-container block-12 blocks-container clearfix">
+
+              <div class="roadmap__item-wrapper block-6 float-left">
+                <div class="roadmap__item">
+                  <div class="blocks-container clearfix d-flex align-items-center">
+                    <div class="buffer float-left" role="presentation" aria-hidden="true">
+                      <picture>
+                <source type="image/webp" srcset="./assets/img/8-moaFd46p-48.webp 48w,
+ ./assets/img/8-moaFd46p-72.webp 72w,
+ ./assets/img/8-moaFd46p-96.webp 96w,
+ ./assets/img/8-moaFd46p-144.webp 144w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/8-moaFd46p-48.png 48w,
+ ./assets/img/8-moaFd46p-72.png 72w,
+ ./assets/img/8-moaFd46p-96.png 96w,
+ ./assets/img/8-moaFd46p-144.png 144w" sizes="100vw">
+                  <img
+                      src="./assets/img/8-moaFd46p-48.png"
+                      width="48"
+                      height="48"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                    </div>
+                    <h3 class="text float-left">2022 — Awareness</h3>
+                  </div>
+  
+                  <ul class="text-s list-reset buffer">
+                    <li>Q1:Establish Social Media presence</li>
+                    <li>Q2:Viral Marketing with the community</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="block-6 roadmap__spacer float-left"></div>
+            </div>
+
+            <div class="roadmap__item-container block-12 blocks-container clearfix">
+              
+              <div class="block-6 roadmap__spacer float-left"></div>
+              <div class="roadmap__item-wrapper block-6 float-right">
+                <div class="roadmap__item">
+                  <div class="blocks-container clearfix d-flex align-items-center">
+                    <div class="buffer float-left" role="presentation" aria-hidden="true">
+                      <picture>
+                <source type="image/webp" srcset="./assets/img/Rls4vK8QcG-48.webp 48w,
+ ./assets/img/Rls4vK8QcG-72.webp 72w,
+ ./assets/img/Rls4vK8QcG-96.webp 96w,
+ ./assets/img/Rls4vK8QcG-144.webp 144w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/Rls4vK8QcG-48.png 48w,
+ ./assets/img/Rls4vK8QcG-72.png 72w,
+ ./assets/img/Rls4vK8QcG-96.png 96w,
+ ./assets/img/Rls4vK8QcG-144.png 144w" sizes="100vw">
+                  <img
+                      src="./assets/img/Rls4vK8QcG-48.png"
+                      width="48"
+                      height="48"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                    </div>
+                    <h3 class="text float-left">2022 — Expansion</h3>
+                  </div>
+  
+                  <ul class="text-s list-reset buffer">
+                    <li>Q3: Launch NFTs 2.0 with utility</li>
+                    <li>Q4: Social events and gatherings</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="roadmap__item-container block-12 blocks-container clearfix">
+
+              <div class="roadmap__item-wrapper block-6 float-left">
+                <div class="roadmap__item">
+                  <div class="blocks-container clearfix d-flex align-items-center">
+                    <div class="buffer float-left" role="presentation" aria-hidden="true">
+                      <picture>
+                <source type="image/webp" srcset="./assets/img/zfbPXKmalf-48.webp 48w,
+ ./assets/img/zfbPXKmalf-72.webp 72w,
+ ./assets/img/zfbPXKmalf-96.webp 96w,
+ ./assets/img/zfbPXKmalf-144.webp 144w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/zfbPXKmalf-48.png 48w,
+ ./assets/img/zfbPXKmalf-72.png 72w,
+ ./assets/img/zfbPXKmalf-96.png 96w,
+ ./assets/img/zfbPXKmalf-144.png 144w" sizes="100vw">
+                  <img
+                      src="./assets/img/zfbPXKmalf-48.png"
+                      width="48"
+                      height="48"
+                      alt=""
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                    </div>
+                    <h3 class="text float-left">2023 — BunnyVerse</h3>
+                  </div>
+  
+                  <ul class="text-s list-reset buffer">
+                    <li>Q1:Revolutionary DeFi 2.0 protocols</li>
+                    <li>Q2:GameFi with emphasis on game</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="block-6 roadmap__spacer float-left"></div>
+            </div>
+
+            <div class="roadmap__item-container block-12 blocks-container clearfix">
+              
+              <div class="block-6 roadmap__spacer float-left"></div>
+              <div class="roadmap__item-wrapper block-6 float-right">
+                <div class="roadmap__item">
+                  <div class="blocks-container clearfix d-flex align-items-center">
+                    <div class="buffer float-left" role="presentation" aria-hidden="true">
+                      <picture>
+                <source type="image/webp" srcset="./assets/img/f12HmzpXHq-48.webp 48w,
+ ./assets/img/f12HmzpXHq-72.webp 72w,
+ ./assets/img/f12HmzpXHq-96.webp 96w,
+ ./assets/img/f12HmzpXHq-144.webp 144w" sizes="100vw">
+              <source type="image/png" srcset="./assets/img/f12HmzpXHq-48.png 48w,
+ ./assets/img/f12HmzpXHq-72.png 72w,
+ ./assets/img/f12HmzpXHq-96.png 96w,
+ ./assets/img/f12HmzpXHq-144.png 144w" sizes="100vw">
+                  <img
+                      src="./assets/img/f12HmzpXHq-48.png"
+                      width="48"
+                      height="48"
+                      alt="Icon"
+                      loading="lazy"
+                      decoding="async">
+            </picture>
+  
+                    </div>
+                    <h3 class="text float-left">2023 — Karma</h3>
+                  </div>
+  
+                  <ul class="text-s list-reset buffer">
+                    <li>Q3: NGO with Starlink in Africa</li>
+                    <li>Q4: BunnyParty to discuss our future</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div class="spacer-30"></div>
+          </div>
+
+          <div class="text-center block-12">
+
+            <div class="spacer-50"></div>
+
+            <div class="buffer">
+              <a aria-label="Buy now" href="#" class="roadmap__buy button d-inline-block">Buy Now</a>
+            </div>
+            
+            <div class="spacer-50"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+    
+<footer>
+    <div class="footer">
+        <div class="container-ds text-center">
+            <a href="https://github.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="./assets/img/BdHG6OjJRk-32.svg">
+              <img src="./assets/img/BdHG6OjJRk-32.png" width="32" height="32" alt="to our github"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            <a href="https://gitbook.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="./assets/img/xHByo37SHS-32.svg">
+              <img src="./assets/img/xHByo37SHS-32.png" width="32" height="32" alt="to our gitbook"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            <a href="https://medium.com/" class="buffer d-inline-block">
+                <div class="image-block-inside d-inline-block">
+                    <picture>
+              <source type="image/svg+xml" srcset="./assets/img/rcMVak410q-32.svg">
+              <img src="./assets/img/rcMVak410q-32.png" width="32" height="32" alt="to our medium"
+              loading="lazy"
+                      decoding="async">
+          </picture>
+                </div>
+            </a>
+            
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+</footer>
+
+
+    
+        
+
+
+<script src="./assets/js/bundle.js"></script>
+
+    
+
+    
+</body>
+</html>

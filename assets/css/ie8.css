@@ -1,0 +1,36 @@
+
+
+.header{
+    background: #232323;
+}
+
+.hero__info{
+    width: 60%;
+}
+
+.hero__image{
+    width: 40%;
+}
+
+.join__grid__item{
+    width: 33.33%;
+}
+
+.roadmap__item-wrapper, .roadmap__spacer {
+    border: 0;
+}
+
+@media screen and (max-width: 840px){
+    .main-menu__item{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .roadmap__main{
+        width: auto;
+    }
+}
+
+
+

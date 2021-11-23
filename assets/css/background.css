@@ -1,7 +1,7 @@
 
 
 .hero{
-    background: url(../img/gradient1.webp) center no-repeat, url(/assets/img/logo_gradient.webp) top left no-repeat;
+    background: url(../img/gradient1.webp) center no-repeat, url(../img/logo_gradient.webp) top left no-repeat;
     background-size: cover, 524px 204px;
 }
 

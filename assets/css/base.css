@@ -661,7 +661,7 @@ body{
 
 
 .hero{
-  background: url(../img/gradient1.webp) center no-repeat, url(../img/logo_gradient.webp) top left no-repeat;
+  background: url(../assets/img/gradient1.webp) center no-repeat, url(../assets/img/logo_gradient.webp) top left no-repeat;
   background-size: cover, 524px 204px;
   min-height: 100vh;
   display: flex;
@@ -725,14 +725,14 @@ body{
 }
 
 #intro > .background{
-  background: url(../img/parralax_frame.svg) right repeat-y fixed;
-  /* , url(../img/gradient2.webp) center no-repeat;  */
+  background: url(../assets/img/parralax_frame.svg) right repeat-y fixed;
+  /* , url(../assets/img/gradient2.webp) center no-repeat;  */
   background-size: 27.22% auto, contain;
 }
 
 #tokenomics{
-  background: url(../img/parralax_frame.svg) left repeat-y fixed;
-  /* , url(../img/gradient3.webp) center no-repeat;  */
+  background: url(../assets/img/parralax_frame.svg) left repeat-y fixed;
+  /* , url(../assets/img/gradient3.webp) center no-repeat;  */
   background-size: 27.22% auto, contain;
 }
 
@@ -908,8 +908,8 @@ body{
 }
 
 #join{
-  background: url(../img/join__bg.webp) left 0 no-repeat fixed;
-  /* ,url(../img/gradient4.webp) center no-repeat;  */
+  background: url(../assets/img/join__bg.webp) left 0 no-repeat fixed;
+  /* ,url(../assets/img/gradient4.webp) center no-repeat;  */
   background-size: contain;
 
 }
@@ -919,7 +919,7 @@ body{
 /* ROADMAP */
 
 #roadmap{
-  /* background: url(../img/gradient5.webp) center no-repeat; */
+  /* background: url(../assets/img/gradient5.webp) center no-repeat; */
 }
 
 .roadmap__item{
@@ -1419,7 +1419,7 @@ list-style: none;
         height: 20px;
         padding: 3px;
         border: 0;
-        background-image: url("../img/burger.png");
+        background-image: url("../assets/img/burger.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 18px 12px;
@@ -1431,19 +1431,19 @@ list-style: none;
 
 
     .js .burger__button--opened {
-        background-image: url("../img/cross.png");
+        background-image: url("../assets/img/cross.png");
         background-position: center;
         background-size: 14px 14px;
         background-repeat: no-repeat;
     }
 
     .svg .burger__button {
-        background-image: url("../img/burger.svg");
+        background-image: url("../assets/img/burger.svg");
     }
 
 
     .svg .burger__button--opened {
-        background-image: url("../img/cross.svg");
+        background-image: url("../assets/img/cross.svg");
     }
 
     .js .header__main-menu-container--opened {

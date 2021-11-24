@@ -338,5 +338,3 @@ window.emptySpaceClick = function(){
         mainMenuLinks[i].onkeydown = keyboardSupport(mainMenuLinks, mainMenuLinksSymbols, i);
     }
 })();
-
-

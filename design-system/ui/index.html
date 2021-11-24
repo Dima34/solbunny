@@ -3,12 +3,12 @@
     
 
     <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>UI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>UI</title>
 
-  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
 <link rel="icon" sizes="16x16 32x32 64x64" href="/assets/img/favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/favicons/favicon-192.png">
 <link rel="icon" type="image/png" sizes="160x160" href="/assets/img/favicons/favicon-160.png">
@@ -29,105 +29,94 @@
 <meta name="msapplication-TileImage" content="/assets/img/favicons/favicon-144.png">
 <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
 
-  <style>
-    @font-face {
-      font-family: 'questrial';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      src: url('/assets/fonts/questrial-regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('/assets/fonts/questrial-regular.woff') format('woff');
-      /* Modern Browsers */
-    }
-
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      src: url('/assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('/assets/fonts/poppins-v15-latin-regular.woff') format('woff');
-      /* Modern Browsers */
-    }
-
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      font-weight: 700;
-      font-display: swap;
-      src: url('/assets/fonts/poppins-v15-latin-700.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('/assets/fonts/poppins-v15-latin-700.woff') format('woff');
-      /* Modern Browsers */
-    }
-  </style>
-    
+    <style>
+      @font-face {
+        font-family: 'questrial';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        src: url('/assets/fonts/questrial-regular.woff2') format('woff2'),
+          /* Super Modern Browsers */
+          url('/assets/fonts/questrial-regular.woff') format('woff');
+        /* Modern Browsers */
+      }
   
-
-  <link rel="preload" href="/assets/css/background.css">
-  <link rel="stylesheet" href="/assets/css/base.css">
-  <script>
-    window.onload = function(){
-      const preloaded = document.querySelectorAll("[rel='preload']")
-      for (let i = 0; i < preloaded.length; i++) {
-        preloaded[i].setAttribute("rel", "stylesheet")
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        src: url('/assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+          /* Super Modern Browsers */
+          url('/assets/fonts/poppins-v15-latin-regular.woff') format('woff');
+        /* Modern Browsers */
+      }
+  
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/assets/fonts/poppins-v15-latin-700.woff2') format('woff2'),
+          /* Super Modern Browsers */
+          url('/assets/fonts/poppins-v15-latin-700.woff') format('woff');
+        /* Modern Browsers */
+      }
+    </style>
+      
+    <link rel="stylesheet" href="/assets/css/background.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    
+    <!--[if lte IE 9]>
+            <link rel="stylesheet" href="/assets/css/ie9.css">
+        <![endif]-->
+  
+    <!--[if lte IE 8]>
+            <link rel="stylesheet" href="/assets/css/ie8.css">
+        <![endif]-->
+  
+    <!--[if lte IE 7]>
+            <link rel="stylesheet" href="/assets/css/ie7.css">
+        <![endif]-->
+  
+    <!--[if lte IE 5]>
+            <link rel="stylesheet" href="/assets/css/ie5.css">
+        <![endif]-->
+    
+    <script src="/assets/js/utils/class-function.js"></script>
+    <script>
+      (function() {
+        var html = document.getElementsByTagName('html')[0];
+  
+        if(html) {
+          html.className +=html.className ? " js" : "js";
+        }
         
-      }      
-    }
+        if (typeof SVGRect !== "undefined") {
+          html.className +=html.className ? " svg" : "svg";
+        }
+
+        window.animation = false;
+        if (document.createElement('div').style.animationName !== undefined && Element.prototype.closest) {
+          window.animation = true;
+          window.classFunction.addClass(html, 'animation-supported');
+        }
+      })();
+    </script>
+
     
-  </script>
-  <!--[if lte IE 9]>
-          <link rel="stylesheet" href="/assets/css/ie9.css">
-      <![endif]-->
-
-  <!--[if lte IE 8]>
-          <link rel="stylesheet" href="/assets/css/ie8.css">
-      <![endif]-->
-
-  <!--[if lte IE 7]>
-          <link rel="stylesheet" href="/assets/css/ie7.css">
-      <![endif]-->
-
-  <!--[if lte IE 5]>
-          <link rel="stylesheet" href="/assets/css/ie5.css">
-      <![endif]-->
-
-
-  <script src="/assets/js/utils/class-function.js"></script>
-  <script>
-    (function () {
-      var html = document.getElementsByTagName('html')[0];
-
-      if (html) {
-        html.className += html.className ? " js" : "js";
-      }
-
-      if (typeof SVGRect !== "undefined") {
-        html.className += html.className ? " svg" : "svg";
-      }
-
-      window.animation = false;
-      if (document.createElement('div').style.animationName !== undefined && Element.prototype.closest) {
-        window.animation = true;
-        window.classFunction.addClass(html, 'animation-supported');
-      }
-    })();
-  </script>
-
-  
-  
+        
         <link rel="stylesheet" href="../../assets/css/design-system/design-system.css">
     
-  
+    
 
-  
+    
 
 </head>
+
 <body>
 
     
@@ -137,8 +126,8 @@
       <div class="header__logo float-left logo" role="banner">
         <a href="#hero" class="d-block image-block-inside">
           <picture>
-              <source type="image/svg+xml" srcset="/assets/img/3ara5SMDKZ-168.svg">
-              <img src="/assets/img/3ara5SMDKZ-168.png" width="152" height="32" alt="To home"
+              <source type="image/svg+xml" srcset="/assets/img/KjnhuNVr8Y-168.svg">
+              <img src="/assets/img/KjnhuNVr8Y-168.png" width="152" height="32" alt="To home"
               loading="lazy"
                       decoding="async">
           </picture>
@@ -275,7 +264,7 @@
           </picture>
                 </div>
             </a>
-            <a href="https://gitbook.com/" class="buffer d-inline-block">
+            <a href="https://bunnynomics-nomnom.gitbook.io/internal-wiki/" class="buffer d-inline-block">
                 <div class="image-block-inside d-inline-block">
                     <picture>
               <source type="image/svg+xml" srcset="/assets/img/xHByo37SHS-32.svg">
@@ -285,7 +274,7 @@
           </picture>
                 </div>
             </a>
-            <a href="https://medium.com/" class="buffer d-inline-block">
+            <a href="https://medium.com/@bunnynomics101" class="buffer d-inline-block">
                 <div class="image-block-inside d-inline-block">
                     <picture>
               <source type="image/svg+xml" srcset="/assets/img/rcMVak410q-32.svg">

@@ -1,26 +1,26 @@
 
 
 .hero{
-    background: url(/assets/img/gradient1.svg) center no-repeat, url(/assets/img/logo_gradient.svg) top left no-repeat;
+    background: url(../img/gradient1.svg) center no-repeat, url(../img/logo_gradient.svg) top left no-repeat;
     background-size: cover, 524px 204px;
 }
 
 
 #intro > .background{
-    background: url(/assets/img/parralax_frame.svg) right repeat-y fixed;
-    /* , url(/assets/img/gradient2.webp) center no-repeat;  */
+    background: url(../img/parralax_frame.svg) right repeat-y fixed;
+    /* , url(../img/gradient2.webp) center no-repeat;  */
     background-size: 27.22% auto, contain;
   }
 
   #tokenomics{
-    background: url(/assets/img/parralax_frame.svg) left repeat-y fixed;
-    /* , url(/assets/img/gradient3.webp) center no-repeat;  */
+    background: url(../img/parralax_frame.svg) left repeat-y fixed;
+    /* , url(../img/gradient3.webp) center no-repeat;  */
     background-size: 27.22% auto, contain;
   }
 
   #join{
-    background: url(/assets/img/join__bg.svg) left 0 no-repeat fixed;
-    /* ,url(/assets/img/gradient4.webp) center no-repeat;  */
+    background: url(../img/join__bg.svg) left 0 no-repeat fixed;
+    /* ,url(../img/gradient4.webp) center no-repeat;  */
     background-size: contain;
   
   }
